@@ -45,5 +45,30 @@ body {
     height: 100px;
 }
 
+/* responsive - for mobile */
+@media only screen and (max-width: 500px) {
+    .gatewood, .clark, .morgan, .harding {
+        height: 15vh;
+    }
+    .grass {
+        height: 10vh;
+        width: 100%;
+    }
+}
 
+/* responsive - for tablet */
+@media only screen and (min-width: 501px) and (max-width: 950px) {
+    .gatewood, .clark, .morgan, .harding {
+        height: 25vh;
+    }
+    .grass {
+        height: 15vh;
+        width: 100%;
+    }
+}
+
+/* responsive - for desktop */
+@media only screen and (min-width: 961px) {
+
+}
 
