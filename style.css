@@ -68,7 +68,9 @@ body {
 
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
-    
+    body {
+        max-height: 100vh;
+    }
     .gatewood, .clark, .morgan, .harding {
         height: 15vh;
     }
