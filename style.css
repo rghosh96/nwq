@@ -33,16 +33,18 @@ body {
 }
 
 .g, .h, .m, .c {
-    position: absolute;
-    z-index: 10;
     font-family:'Bungee Shade', cursive;
     color: rgb(207, 91, 91);
     font-size: 20px;
 }
 
+
+
 .g:hover, .h:hover, .m:hover, .c:hover {
     color: rgb(94, 56, 56);
     cursor: help;
+    animation: pulse 1s infinite;
+    border-radius: 30px;
 }
 
 .top {
@@ -68,6 +70,9 @@ body {
 
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
+    body {
+        min-height: -webkit-fill-available;
+    }
     
     .gatewood, .clark, .morgan, .harding {
         height: 15vh;
@@ -99,3 +104,19 @@ body {
 
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}

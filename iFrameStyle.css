@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* accounts for padding + margin + border in widht & height */
+    font-family: 'Comfortaa', cursive;
+    background-color: black;
+}
+
+.gatewood {
+    width: 80px;
+    height: 50px;
+}
