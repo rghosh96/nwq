@@ -73,7 +73,6 @@ body {
     body {
         min-height: -webkit-fill-available;
     }
-    
     .gatewood, .clark, .morgan, .harding {
         height: 15vh;
     }
