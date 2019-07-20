@@ -71,7 +71,7 @@ body {
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
     body {
-        min-height: -webkit-fill-available;
+        height: calc(var(--vh, 1vh) * 100);
     }
     .gatewood, .clark, .morgan, .harding {
         height: 15vh;
