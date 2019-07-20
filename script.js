@@ -13,3 +13,4 @@ else if (5 <= currentHour && currentHour < 8) {
 else {
     document.body.style.backgroundImage = "url('night.svg')";
 }
+
