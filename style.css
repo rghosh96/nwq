@@ -77,8 +77,7 @@ body {
         height: 15vh;
     }
     .grass {
-        position: fixed;
-        height: 40vh;
+        height: 15vh;
     }
     .g, .h, .m, .c {
         font-size: 10px;
