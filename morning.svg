@@ -8,17 +8,16 @@
 	.st2{fill:url(#SVGID_2_);}
 </style>
 <g>
-	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="682.2106" y1="690.2983" x2="683.7424" y2="95.9438" gradientTransform="matrix(1 0 0 -1 0 768)">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="682.2106" y1="77.7017" x2="683.7424" y2="672.0562">
 		<stop  offset="0.1594" style="stop-color:#6AA9FF"/>
 		<stop  offset="0.5406" style="stop-color:#BFE3FF"/>
 	</linearGradient>
 	<rect class="st0" width="1366" height="768"/>
 </g>
 <line class="st1" x1="683" y1="120" x2="683" y2="673"/>
-<radialGradient id="SVGID_2_" cx="683" cy="375.6047" r="213.1416" gradientTransform="matrix(1 0 0 0.6095 0 146.6593)" gradientUnits="userSpaceOnUse">
+<radialGradient id="SVGID_2_" cx="683" cy="234.1027" r="213.1486" gradientTransform="matrix(1 0 0 -0.6095 0 614.7553)" gradientUnits="userSpaceOnUse">
 	<stop  offset="0" style="stop-color:#F2FF2A"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </radialGradient>
-<circle class="st2" cx="683" cy="375.6" r="213.14"/>
+<circle class="st2" cx="683" cy="472.1" r="213.1"/>
 </svg>
