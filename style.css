@@ -20,14 +20,14 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,  minmax(10px, max-content));
-    justify-items: center;
+    justify-content: center;
     align-items: end;
 }
 
 .grass {
     position: absolute;
     bottom: 0px;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     background-image: url("grass.svg");
 }
