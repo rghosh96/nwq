@@ -4,6 +4,7 @@
     <title>responsive?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Poiret+One|Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,23 +13,117 @@
     <div class ="title">
         <img class="logo" src="NWQlogo.svg"
     </div>
+
+    <div id = "gmodal">
+        <div class = "modalcontent animated bounceInDown">
+            <span class ="close">[ x ]</span>
+            <h2 class ="animated jello">─ welcome to ─</h2>
+            <h1 class ="animated jello">gatewood</h1>
+            <hr>
+            <div class = "hallInfo">
+                <div class = "section">
+                    <div class = "section">
+                        <h3>accent color:</h3>
+                        <p class = "col2 paragraph">dark royal blue</p>
+                    </div>
+                    <h3>the RA's:</h3>
+                    <ul class ="col2">
+                        <li class = "paragraph">1st - Sophia</li>
+                        <li class = "paragraph">2nd - Jordan</li>
+                        <li class = "paragraph">3rd - Rashi</li>
+                        <li class = "paragraph">4th - Joe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "hmodal">
+        <div class = "modalcontent animated bounceInDown">
+            <span class ="close">[ x ]</span>
+            <h2 class ="animated jello">─ welcome to ─</h2>
+            <h1 class ="animated jello">harding</h1>
+            <hr>
+            <div class = "hallInfo">
+                <div class = "section">
+                    <div class = "section">
+                        <h3>accent color:</h3>
+                        <p class = "col2 paragraph">urbane bronze</p>
+                    </div>
+                    <h3>the RA's:</h3>
+                    <ul class ="col2">
+                        <li class = "paragraph">3rd - Kiersten</li>
+                        <li class = "paragraph">4th - Quincy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "mmodal">
+        <div class = "modalcontent animated bounceInDown">
+            <span class ="close">[ x ]</span>
+            <h2 class ="animated jello">─ welcome to ─</h2>
+            <h1 class ="animated jello">morgan</h1>
+            <hr>
+            <div class = "hallInfo">
+                <div class = "section">
+                    <div class = "section">
+                        <h3>accent color:</h3>
+                        <p class = "col2 paragraph">spring meadow green</p>
+                    </div>
+                    <h3>the RA's:</h3>
+                    <ul class ="col2">
+                        <li class = "paragraph">1st - Abigail</li>
+                        <li class = "paragraph">2nd - Vincent</li>
+                        <li class = "paragraph">3rd - Ellie</li>
+                        <li class = "paragraph">4th - Christa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "cmodal">
+        <div class = "modalcontent animated bounceInDown">
+            <span class ="close">[ x ]</span>
+            <h2 class ="animated jello">─ welcome to ─</h2>
+            <h1 class ="animated jello">clark</h1>
+            <hr>
+            <div class = "hallInfo">
+                <div class = "section">
+                    <div class = "section">
+                        <h3>accent color:</h3>
+                        <p class = "col2 paragraph">carrot stick</p>
+                    </div>
+                    <h3>the RA's:</h3>
+                    <ul class ="col2">
+                        <li class = "paragraph">1st - Anna</li>
+                        <li class = "paragraph">2nd - Trip</li>
+                        <li class = "paragraph">3rd - Molly</li>
+                        <li class = "paragraph">4th - Grace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="bg" id="sky">
         <div class="top animated bounceInUp delay-1s"> 
-            <a class="g">gatewood</a> 
-            <img class="gatewood" src="gatewood.svg"> 
+            <div id="g" onclick="dropModal('gmodal', 'gatewood')">gatewood</div> 
+            <img id="gatewood" src="gatewood.svg"> 
         </div>
         <div class="top animated bounceInUp delay-2s"> 
-                <div class="h">harding</div> 
-                <img class="harding" src="harding.svg"> 
+                <div id="h" onclick="dropModal('hmodal', 'harding')">harding</div> 
+                <img id="harding" src="harding.svg"> 
         </div>
         <div class="top animated bounceInUp delay-3s"> 
-                <div class="m">morgan</div> 
-                <img class="morgan" src="morgan.svg"> 
+                <div id="m" onclick="dropModal('mmodal', 'morgan')">morgan</div> 
+                <img id="morgan" src="morgan.svg"> 
         </div>
         <div class="top animated bounceInUp delay-4s"> 
-                <div class="c">clark</div> 
-                <img class="clark" src="clark.svg"> 
+                <div id="c" onclick="dropModal('cmodal', 'clark')">clark</div> 
+                <img id="clark" src="clark.svg"> 
         </div>
     </div>
     <div class="grass animated bounceInUp"></div>
