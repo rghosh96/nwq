@@ -29,10 +29,11 @@ body {
     bottom: 0px;
     height: 30vh;
     width: 100%;
+    z-index: 3;
     background-image: url("grass.svg");
 }
 
-.g, .h, .m, .c {
+#g, #h, #m, #c {
     font-family:'Bungee Shade', cursive;
     color: rgb(207, 91, 91);
     font-size: 20px;
@@ -40,7 +41,7 @@ body {
 
 
 
-.g:hover, .h:hover, .m:hover, .c:hover {
+#g:hover, #h:hover, #m:hover, #c:hover {
     color: rgb(94, 56, 56);
     cursor: help;
     animation: pulse 1s infinite;
@@ -48,13 +49,15 @@ body {
 }
 
 .top {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 
-.gatewood, .clark, .morgan, .harding {
+#gatewood, #clark, #morgan, #harding {
     height: 40vh;
+    transition: all 1s ease-out;
 }
 
 .title {
@@ -68,31 +71,100 @@ body {
     height: 100px;
 }
 
+#modal, #modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 70%; /* Full height */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #me1, #me2, #me3, #me1a, #me1b {
+      display:none;
+  }
+
+
+  
+  /* Modal Content */
+  .modalcontent {
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #dfbcbc;
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    height: 100%;
+    width: 80%;
+  }
+
+  .close, .close1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 13px;
+    color:grey;
+}
+
+  .close:hover, .close1:hover {
+    font-size: 14px;
+    color:#bbb2c2;
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+}
+
+.box {
+    text-align: left;
+    line-height: 2px;
+    margin-left: 25px;
+    color:grey;
+}
+.box1 {
+    text-align: center;
+    line-height: 2px;
+    margin-left: 25px;
+}
+
+.ex {
+    text-align: left;
+    line-height: 2px;
+    margin-left: 31px;
+    font-size:12px;
+    color:grey;
+}
+
+.center {
+    text-align: center;
+}
+
+
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
     body {
         min-height: -webkit-fill-available;
     }
-    .gatewood, .clark, .morgan, .harding {
+    #gatewood, #clark, #morgan, #harding{
         height: 15vh;
     }
     .grass {
         height: 19vh;
     }
-    .g, .h, .m, .c {
+    #g, #h, #m, #c {
         font-size: 10px;
     }
 }
 
 /* responsive - for tablet */
 @media only screen and (min-width: 501px) and (max-width: 1025px) {
-    .gatewood, .clark, .morgan, .harding {
+    #gatewood, #clark, #morgan, #harding {
         height: 25vh;
     }
     .grass {
         height: 25vh;
     }
-    .g, .h, .m, .c {
+    #g, #h, #m, #c {
         font-size: 15px;
     }
 }
