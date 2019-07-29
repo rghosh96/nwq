@@ -22,6 +22,7 @@ body {
     grid-template-columns: repeat(auto-fit,  minmax(10px, max-content));
     justify-content: center;
     align-items: end;
+    height: 50%;
 }
 
 .grass {
@@ -71,7 +72,7 @@ body {
     height: 100px;
 }
 
-#modal, #modal1 {
+#gmodal, #hmodal, #mmodal, #cmodal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -84,67 +85,91 @@ body {
     align-items: center;
   }
 
-  #me1, #me2, #me3, #me1a, #me1b {
-      display:none;
-  }
-
-
-  
   /* Modal Content */
   .modalcontent {
     overflow: auto; /* Enable scroll if needed */
-    background-color: #dfbcbc;
     border-radius: 25px;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
     border: none;
     height: 100%;
     width: 80%;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   }
 
-  .close, .close1 {
+  .close {
     font-family: 'Inconsolata', monospace;
     font-size: 13px;
-    color:grey;
-}
-
-  .close:hover, .close1:hover {
-    font-size: 14px;
-    color:#bbb2c2;
-    cursor:pointer;
+    color:rgb(44, 63, 51);
     transition: all .3s ease-in-out;
 }
 
-.box {
-    text-align: left;
-    line-height: 2px;
-    margin-left: 25px;
-    color:grey;
-}
-.box1 {
-    text-align: center;
-    line-height: 2px;
-    margin-left: 25px;
+  .close:hover {
+    font-size: 14px;
+    color: whitesmoke;
+    cursor:pointer;
 }
 
-.ex {
-    text-align: left;
-    line-height: 2px;
-    margin-left: 31px;
-    font-size:12px;
-    color:grey;
+h1 {
+    text-align: center;
+    font-family:'Bungee Shade', cursive;
+    padding-bottom: 20px;
+    color: white;
 }
 
-.center {
+h2 {
     text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 15px;
+    color: rgb(44, 63, 51);
 }
+
+h3 {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 25px;
+    color: rgb(44, 63, 51);
+}
+
+hr {
+    color: rgb(44, 63, 51);
+    margin: 20px;
+}
+
+.hallInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.col2 {
+    width: 70%;
+    list-style-type: none;
+}
+
+.paragraph {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+
 
 
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
-    body {
-        min-height: -webkit-fill-available;
-    }
     #gatewood, #clark, #morgan, #harding{
         height: 15vh;
     }
