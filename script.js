@@ -43,3 +43,4 @@ function dropModal(modal, building) {
         }
     }
     }
+
