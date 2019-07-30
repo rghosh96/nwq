@@ -1,46 +1,50 @@
-var currentDate = new Date();
-var currentHour = currentDate.getHours();
-console.log(currentHour);
-var buildingModals = document.getElementsByClassName('modalcontent'); // get all elements
-if (8 < currentHour && currentHour <= 18) {
-    document.body.style.backgroundImage = "url('morning.svg')";
-	for(var i = 0; i < buildingModals.length; i++){
-		buildingModals[i].style.backgroundColor = "#6DAF84";
-	}
-}
-else if (18 < currentHour && currentHour <= 20) {
-    document.body.style.backgroundImage = "url('dusk.svg')";
-}
-else if (5 <= currentHour && currentHour < 8) {
-    document.body.style.backgroundImage = "url('dawn.svg')";
-}
-else {
-    document.body.style.backgroundImage = "url('night.svg')";
-}
+//********* BUILDING MODALS JAVASCRIPT FUNCTIONALITY! ***********//
 
-//duty button
-var g = document.getElementById("g");
-var h = document.getElementById("h");
-var m = document.getElementById("m");
-var c = document.getElementById("c");
+//get all the building links in an array
+var buildingLinks = [document.getElementById("g"), 
+                    document.getElementById("h"), 
+                    document.getElementById("m"), 
+                    document.getElementById("c")];
+
+//gets all the close buttons
 var exit = document.getElementsByClassName("close");
 
+//function to make building modals appear when clicked; takes specified modal & building svg
 function dropModal(modal, building) {
-            document.getElementById(modal).style.display = "block";
-            g.style.visibility = "hidden";
-            h.style.visibility = "hidden";
-            m.style.visibility = "hidden";
-            c.style.visibility = "hidden";
-            document.getElementById(building).style.transform = "scale(1.2) translate(0px, -30px)";
-        for (var i = 0; i < exit.length; i++) {
+    //series of if statements to change body bg color depending on modal selected
+    if (modal === 'gmodal') {
+        bgColor("#b5c7da");
+    }
+    if (modal === 'hmodal') {
+        bgColor("#c4b7aa");
+    }
+    if (modal === 'mmodal') {
+        bgColor("#517764");
+    }
+    if (modal === 'cmodal') {
+        bgColor("#ac614e");
+    }
+    //hides all the building name links by iterating through the array defined earlier
+    for (var i = 0; i < buildingLinks.length; i++) {
+        buildingLinks[i].style.visibility = "hidden";
+    }
+    //display modal & enlarge specified building svg
+    document.getElementById(modal).style.display = "block";
+    document.getElementById(building).style.transform = "scale(1.2) translate(0px, -30px)";
+    //closing the modal using the exit var (which stores all the close buttons by class name)
+    for (var i = 0; i < exit.length; i++) {
+        //following function restores bg color to white, shows building links, hides modal, & scales building svg back down
         exit[i].onclick = function() {
+            bgColor("white");
+            for (var i = 0; i < buildingLinks.length; i++) {
+                buildingLinks[i].style.visibility = "visible";
+            }
             document.getElementById(modal).style.display = "none";
-            g.style.visibility = "visible";
-            h.style.visibility = "visible";
-            m.style.visibility = "visible";
-            c.style.visibility = "visible";
             document.getElementById(building).style.transform = "scale(1) translate(0px, 0px)";
         }
     }
-    }
+}
 
+function bgColor(color) {
+    document.body.style.backgroundColor = color;
+}

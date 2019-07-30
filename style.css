@@ -7,10 +7,45 @@
 
 body {
     height: 100vh;
-    /* background-image: linear-gradient(rgb(227, 237, 255), rgb(192, 209, 241), #b3d1f5); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: white;
+    transition: all 1s ease-out;
+}
+
+.topbar {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.navlinks {
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+
+.navlinks:hover {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: gray;
+    transition: all .5s ease-out;
+    cursor: help;
 }
 
 .bg {
@@ -22,7 +57,7 @@ body {
     grid-template-columns: repeat(auto-fit,  minmax(10px, max-content));
     justify-content: center;
     align-items: end;
-    height: 50%;
+    height: 50vh;
 }
 
 .grass {
@@ -36,24 +71,26 @@ body {
 
 #g, #h, #m, #c {
     font-family:'Bungee Shade', cursive;
-    color: rgb(207, 91, 91);
+    color: rgb(133, 26, 26);
     font-size: 20px;
 }
 
 
 
 #g:hover, #h:hover, #m:hover, #c:hover {
-    color: rgb(94, 56, 56);
+    color: #783000;
     cursor: help;
     animation: pulse 1s infinite;
     border-radius: 30px;
 }
 
 .top {
+    height: 100%;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content:flex-end;
 }
 
 #gatewood, #clark, #morgan, #harding {
@@ -63,13 +100,14 @@ body {
 
 .title {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 30vh;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
-    height: 100px;
+    height: 75px;
 }
 
 #gmodal, #hmodal, #mmodal, #cmodal {
@@ -94,15 +132,26 @@ body {
     border: none;
     height: 100%;
     width: 80%;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   }
+
+  .gmodal {
+    background-color: #163266;
+  }
+  .hmodal {
+    background-color: #54504a;
+  }
+  .mmodal {
+    background-color: #a8d974;
+  }
+  .cmodal {
+    background-color: #fd9638;
+  }
+
 
   .close {
     font-family: 'Inconsolata', monospace;
     font-size: 13px;
-    color:rgb(44, 63, 51);
+    color:white;
     transition: all .3s ease-in-out;
 }
 
@@ -132,8 +181,20 @@ h3 {
     color: rgb(44, 63, 51);
 }
 
+.introText {
+    font-family: 'Satisfy', cursive;
+    font-size: 17px;
+}
+
+.titleText {
+    font-family: 'Poiret One', cursive;
+    font-size: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
 hr {
-    color: rgb(44, 63, 51);
+    border-top: 1px solid white;
     margin: 20px;
 }
 
@@ -142,7 +203,6 @@ hr {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
 }
 
 .section {
@@ -171,13 +231,22 @@ hr {
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
     #gatewood, #clark, #morgan, #harding{
-        height: 15vh;
+        height: 20vh;
     }
     .grass {
         height: 19vh;
     }
     #g, #h, #m, #c {
         font-size: 10px;
+    }
+    .header {
+        font-size: 10px
+    }
+    .logo {
+        height:25px;
+    }
+    .navlinks {
+        visibility: hidden;
     }
 }
 
