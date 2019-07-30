@@ -30,7 +30,21 @@ function dropModal(modal, building) {
     }
     //display modal & enlarge specified building svg
     document.getElementById(modal).style.display = "block";
-    document.getElementById(building).style.transform = "scale(1.2) translate(0px, -30px)";
+
+
+      function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.getElementById(building).style.transform = "scale(1.2) translate(0px, -10px)";
+        } else {
+            document.getElementById(building).style.transform = "scale(1.2) translate(0px, -30px)";
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 500px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction); // Attach listener function on state changes
+
+    
     //closing the modal using the exit var (which stores all the close buttons by class name)
     for (var i = 0; i < exit.length; i++) {
         //following function restores bg color to white, shows building links, hides modal, & scales building svg back down
