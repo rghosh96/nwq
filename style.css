@@ -184,6 +184,7 @@ h3 {
 .introText {
     font-family: 'Satisfy', cursive;
     font-size: 17px;
+    text-align:center;
 }
 
 .titleText {
@@ -191,6 +192,7 @@ h3 {
     font-size: 27px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 hr {
