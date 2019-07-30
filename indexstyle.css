@@ -40,6 +40,11 @@ body {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .navlinks:hover {
     letter-spacing: 3px;
     font-weight: bold;
@@ -233,10 +238,10 @@ hr {
 /* responsive - for mobile */
 @media only screen and (max-width: 500px) {
     #gatewood, #clark, #morgan, #harding{
-        height: 20vh;
+        height: 11vh;
     }
     .grass {
-        height: 19vh;
+        height: 9vh;
     }
     #g, #h, #m, #c {
         font-size: 10px;
@@ -255,10 +260,10 @@ hr {
 /* responsive - for tablet */
 @media only screen and (min-width: 501px) and (max-width: 1025px) {
     #gatewood, #clark, #morgan, #harding {
-        height: 25vh;
+        height: 20vh;
     }
     .grass {
-        height: 25vh;
+        height: 19vh;
     }
     #g, #h, #m, #c {
         font-size: 15px;
