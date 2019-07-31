@@ -5,12 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Poiret+One|Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="deskstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="infostyle.css">
     <link rel="stylesheet" href="animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <div id="darkLayer" class="darkClass"></div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class ="mobileNavLinks">
+                <a style="color:white;" href="info.html" class="navlinks">info</a>
+                <br>
+                <a style="color:white;" href="duty.html" class="navlinks">duty</a>
+                <br>
+                <a style="color:white;" href="desk.html" class="navlinks">desk</a>
+        </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <a id="back2Top" title="Back to top" href="#">[ ⇧ ]</a>
+
+
+    <div class="topbar">
+        <a href="index.html">
+            <div class="header animated zoomInRight">
+                <img class="logo" src="test.png">
+                northwest quad.
+            </div>
+        </a>
+        <div id="links" class="animated zoomInLeft">
+            <a href="info.html" class="navlinks">info</a>
+            <a href="duty.html" class="navlinks">duty</a>
+            <a href="desk.html" class="navlinks">desk</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class= "head">
+            <h1>desk operations</h1>
+            <p>[ bc the desk is reeealllyy where it's all at ]</p>
+            <br>
+            <hr>
+        </div>
+        
+
+        <div class = "components">
+            <h2 style ="cursor:pointer" onclick="show('deskhours')">[i] desk hours</h2>
+            <br>
+                <div id = "deskhours" class="animated flipInX">
+                    <h3>weekly desk: </h3>
+                    <p class = "box">☑ Required to work <strong>4 scholarship hours</strong> every week</p>
+                    <p class = "box">☑ Two shifts: each <strong>2 hours</strong></p>
+                    <p class = "ex">❗ EX: 6-8PM on Tuesday, and 2-4PM on Sunday.</p>
+                    <p class = "box">☑ <strong>Cannot</strong> work desk when on duty! Must switch desk shift with someone!</p>
+                </div>
+                <br>
+                <h2 style ="cursor:pointer" onclick="show('sigpad')">[ii] signature pad</h2>
+                <br>
+                <div id = "sigpad" class="animated flipInX">
+                    <h3>activation: </h3>
+                    <p class = "box">☑ Refer to the guide below!</p>
+                    <center><img id="graphic" src="sigpad.png"></center>
+                    <br>
+                </div>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 

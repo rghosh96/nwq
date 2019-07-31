@@ -22,7 +22,7 @@ body {
     display: none;
     cursor: pointer;
     position: fixed;
-    top: 5px;
+    bottom: 5px;
     margin: 15px;
     right: 0;
     color: darkred;
@@ -69,7 +69,7 @@ body {
     margin: 15px;
     background: none;
     border: none;
-    z-index: 9;
+    z-index: 51;
 }
 
 .mobileNavLinks {
@@ -105,6 +105,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    z-index: 50;
 }
 
 .header {
@@ -126,6 +127,7 @@ body {
 .navlinks {
     font-family: 'Poiret One', cursive;
     font-size: 15px;
+    letter-spacing: 3px;
 }
 
 a {
@@ -133,13 +135,6 @@ a {
     color: black;
 }
 
-.navlinks:hover {
-    letter-spacing: 3px;
-    font-weight: bold;
-    color: gray;
-    transition: all .5s ease-out;
-    cursor: help;
-}
 
 .logo {
     height: 75px;
@@ -163,10 +158,62 @@ a {
 
 h1 {
     font-family: 'Londrina Shadow', cursive;
-    color: black;
+    color: rgb(129, 18, 18);
     font-size: 30px;
     letter-spacing: 3px;
     width: 100%;
+}
+p {
+    margin-top: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    font-family: 'Inconsolata', monospace;
+    color: rgb(139, 139, 139);
+    font-size: 17px;
+}
+
+h3 {
+    font-family: 'Satisfy', cursive;
+    text-align:left;
+    font-size: 21px;
+    letter-spacing:3px;
+    margin: 0 0 0 17px;
+    color:#912424;
+}
+
+.box {
+    text-align: left;
+    margin: 0 25px 5px 25px;
+    color:grey;
+}
+.box1 {
+    text-align: center;
+    margin: 0 25px 0 25px;
+}
+
+.ex {
+    text-align: left;
+    margin: 0 0 10px 31px;
+    font-size:12px;
+    color:grey;
+}
+
+.center {
+    text-align: center;
+}
+
+#procedure, #weekend, #break, #deskhours, #sigpad {
+    display:none;
+    justify-self: center;
+}
+
+.components {
+    margin: 30px 0px 30px 0px;
+    justify-self: center;
 }
 
 .info {
@@ -186,6 +233,7 @@ h1 {
     width: 100%;
 }
 
+
 @media only screen and (max-width: 500px) {
     .header {
         font-size: 10px
@@ -197,10 +245,24 @@ h1 {
     .container {
         justify-content: center;
         align-items: center;
+        margin-top:100px;
     }
 
     h1 {
         font-size: 20px;
+        text-align:center;
+    }
+    h2 {
+        font-size: 15px;
+        text-align:center;
+    }
+    h3 {
+        text-align: center;
+        line-height: 15px;
+        margin: 20px 0 20px 0;
+    }
+    p {
+        font-size: 10px;
         text-align:center;
     }
 
@@ -231,6 +293,27 @@ h1 {
     .openbtn {
         visibility: visible;
     }
+    #back2Top {
+        top: 5px;
+        margin: 15px;
+    }
+    .box {
+        text-align: left;
+        font-size: 12px;
+        margin: 0
+    }
+    .box1 {
+        margin: 0;
+    }
+    
+    .ex {
+        text-align: left;
+        margin: 0;
+        font-size: 10px;
+    }
+    #graphic {
+        height: 325px;
+    }
 }
 
 /* responsive - for tablet */
@@ -242,6 +325,10 @@ h1 {
 
     h1 {
         font-size: 20px;
+        text-align:center;
+    }
+    h2 {
+        font-size: 10px;
         text-align:center;
     }
 
@@ -272,6 +359,10 @@ h1 {
     }
     .openbtn {
         visibility: visible;
+    }
+    #back2Top {
+        top: 5px;
+        margin: 15px;
     }
 }
 

@@ -5,12 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Poiret+One|Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dutystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="infostyle.css">
     <link rel="stylesheet" href="animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <div id="darkLayer" class="darkClass"></div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class ="mobileNavLinks">
+                <a style="color:white;" href="info.html" class="navlinks">info</a>
+                <br>
+                <a style="color:white;" href="duty.html" class="navlinks">duty</a>
+                <br>
+                <a style="color:white;" href="desk.html" class="navlinks">desk</a>
+        </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <a id="back2Top" title="Back to top" href="#">[ ⇧ ]</a>
+
+
+    <div class="topbar">
+        <a href="index.html">
+            <div class="header animated zoomInRight">
+                <img class="logo" src="test.png">
+                northwest quad.
+            </div>
+        </a>
+        <div id="links" class="animated zoomInLeft">
+            <a href="info.html" class="navlinks">info</a>
+            <a href="duty.html" class="navlinks">duty</a>
+            <a href="desk.html" class="navlinks">desk</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class= "head">
+            <h1>let's talk ab duty</h1>
+            <p>[ there's a lot that goes on w being on duty, so make sure u kno what ur doing!!! ]</p>
+            <br>
+            <hr>
+        </div>
+        
+
+        <div class = "components">
+            <h2 class="animated jello" style ="cursor:pointer" onclick="show('procedure')">[i] *normal* duty day</h2>
+            <br>
+            <div id ="procedure" class="animated flipInX">
+                <h3>duty procedure: </h3>
+                <p class = "box">☑ Pick up phone at <strong>4PM</strong> from desk on <strong>THAT</strong> day</p>
+                <p class = "box">☑ Leave phone behind desk at <strong>8AM</strong> on the <strong>NEXT</strong> day</p>
+                <p class = "ex">❗ EX: Ellie's on duty Tuesday. That means she picks the phone up from desk at 4PM on TUESDAY, and leaves it behind desk at 8AM on WEDNESDAY.</p>
+                <br>
+                <p class = "box1"><span style="color: rgb(160, 105, 105); font-weight:bold">> first round | </span> between 4-6PM</p>
+                <p class = "box1"><span style="color: rgb(160, 105, 105); font-weight:bold">> second round | </span> between 8-10PM</p>
+                <p class = "box1"><span style="color: rgb(160, 105, 105); font-weight:bold">> third round | </span> after 12AM</p>
+
+                <h3>important duty rules: </h3>
+                <p class = "box">☑ You MUST be in the dorm 8PM - 8AM on your duty day!</p>
+                <p class = "box">☑ You MUST respond to a call within 10 minutes!</p>
+                <p class = "box">☑ You CANNOT work a desk shift if u are on duty! If u have a desk shift, you MUST switch w someone!</p>
+
+                <h3>duty reminders: </h3>
+                <p class = "box">☑ You are on normal duty once a month in NWQ.</p>
+                <p class = "box">☑ Keep the phone charged!</p>
+                <br>
+            </div>
+            <br>
+            <h2 class="animated jello" style ="cursor:pointer" onclick="show('weekend')">[ii] weekend duty</h2>
+            <br>
+            <div id = "weekend" class="animated flipInX">
+                <h3>duty reminders: </h3>
+                <p class = "box">☑ You will have one duty weekend a semester in NWQ.</p>
+                <p class = "box">☑ There are secondaries on weekends!! so u will always hve a buddy on ur duty weekend :) <3</p>
+                <br>
+            </div>
+            <br>
+            <h2 class="animated jello" style ="cursor:pointer" onclick="show('break')">[iii] break duty</h2>
+            <br>
+            <div id = "break" class="animated flipInX">
+                <h3>duty reminders: </h3>
+                <p class = "box">☑ NWQ is open during both winter AND spring break</p>
+                <p class = "ex">❗ Hence, there are TWO break duties</p>
+                <p class = "box">☑ We team up with Hotz & Holcombe/Futrall in order to cover these duty days.</p>
+                <p class = "ex">❗ EVERYONE is required to go to the break duty meeting!!! Even if you do not plan on working during break!!!</p>
+                <p class = "box">☑ You get a $25/day stipend for each day u are on break duty.</p>
+                <p class = "box">☑ BREAK DUTY IS 24 HOURS. You PHYSICALLY pass the phone off to the next person on duty!</p>
+            </div>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 

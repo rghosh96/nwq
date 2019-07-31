@@ -65,7 +65,7 @@ function bgColor(color) {
 
 //hamburger style navbar toggle
 function openNav() {
-    document.getElementById("mySidebar").style.width = "50%";
+    document.getElementById("mySidebar").style.width = "30%";
     document.getElementById("darkLayer").style.visibility = "visible";
   }
   
@@ -93,3 +93,14 @@ $(document).ready(function() {
 
 });
 /*Scroll to top when arrow up clicked END*/
+
+//toggle duty and desk info
+function show(item) {
+    var reveal = document.getElementById(item);
+    if (reveal.style.display === "block") {
+        reveal.style.display = "none";
+    }
+    else {
+        reveal.style.display = "block";
+    }
+}
