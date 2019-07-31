@@ -63,15 +63,13 @@ function bgColor(color) {
     document.body.style.backgroundColor = color;
 }
 
-let navBarToggle = document.getElementById('js-navbar-toggle');
 
-navBarToggle.addEventListener('click', function () {
-    if (document.getElementById('mobileNav').style.visibility == 'visible') {
-        document.getElementById('mobileNav').style.visibility = 'hidden';
-        document.getElementById("darkLayer").style.display = "none";
-    }
-    else {
-        document.getElementById('mobileNav').style.visibility = 'visible';
-        document.getElementById("darkLayer").style.display = "";
-    }
-});
+function openNav() {
+    document.getElementById("mySidebar").style.width = "50%";
+    document.getElementById("darkLayer").style.visibility = "visible";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("darkLayer").style.visibility = "hidden";
+  }
