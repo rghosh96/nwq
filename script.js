@@ -63,7 +63,7 @@ function bgColor(color) {
     document.body.style.backgroundColor = color;
 }
 
-
+//hamburger style navbar toggle
 function openNav() {
     document.getElementById("mySidebar").style.width = "50%";
     document.getElementById("darkLayer").style.visibility = "visible";
@@ -73,3 +73,23 @@ function openNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("darkLayer").style.visibility = "hidden";
   }
+
+
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 30) {
+      $('#back2Top').fadeIn();
+  } else {
+      $('#back2Top').fadeOut(100);
+  }
+});
+$(document).ready(function() {
+  $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+  });
+
+});
+/*Scroll to top when arrow up clicked END*/
