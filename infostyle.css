@@ -5,12 +5,35 @@
     font-family: 'Comfortaa', cursive;
 }
 
+
 body {
     background-color: white;
     display: flex;
     justify-content: center;
-    
+    height: 100%;
+    margin: 0; padding: 0; border: 0;
 }
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    margin: 15px;
+    right: 0;
+    color: darkred;
+    text-align: center;
+    font-size: 11px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    color: grey;
+}
+
 .sidebar {
     height: 100%;
     width: 0;
