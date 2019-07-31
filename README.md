@@ -1,4 +1,6 @@
-### welcome to the nwq guide
+# nwq guide
+
+### welcome to the northwest quadrant
 
 This is a very basic guide to working at the Northwest Quad at the University of Arkansas. This page is in no way affiliated with the University of Arkansas or University Housing. It is an independent project to get some practice with responsive web development from scratch using HTML, CSS, and JavaScript. 
 
