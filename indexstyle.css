@@ -11,29 +11,41 @@ body {
     transition: all 1s ease-out;
 }
 
-.navbar-toggle {
+.sidebar {
+    height: 100%;
+    width: 0;
     position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer; 
-    color: black;
-    height: 15px;
-    visibility: hidden;
-    z-index: 11;
+    right: 0;
+    z-index: 10;
+    top: 0;
+    background-color: darkred;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-#mobileNav {
-    background-color: darkred;
-    z-index: 10;
-    height: 100vh;
-    width: 50%;
-    right: 0px;
+
+.sidebar .closebtn {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin: 15px;
+    color: white;
+}
+
+.openbtn {
     visibility: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: darkred;
+    position: absolute;
+    right: 0px;
+    padding: 10px 15px;
+    margin: 15px;
+    background: none;
+    border: none;
 }
 
 .mobileNavLinks {
@@ -45,6 +57,7 @@ body {
 }
 
 .darkClass {
+    visibility: hidden;
     background-color: black;
     filter:alpha(opacity=50); /* IE */
     opacity: 0.5; /* Safari, Opera */
@@ -303,7 +316,7 @@ hr {
     #links {
         visibility: hidden;
     }
-    .navbar-toggle {
+    .openbtn {
         visibility: visible;
     }
 }
@@ -318,6 +331,12 @@ hr {
     }
     #g, #h, #m, #c {
         font-size: 15px;
+    }
+    #links {
+        visibility: hidden;
+    }
+    .openbtn {
+        visibility: visible;
     }
 }
 
@@ -344,3 +363,6 @@ hr {
 }
 
 
+
+  
+  
