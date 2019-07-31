@@ -10,17 +10,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="darkLayer" class="darkClass" style="display:none"></div>
+
+    <div id = "mobileNav">
+        <div class ="mobileNavLinks">
+            <a style="color:white;" href="info.html" class="navlinks">info</a>
+            <br>
+            <a style="color:white;" href="duty.html" class="navlinks">duty</a>
+            <br>
+            <a style="color:white;" href="desk.html" class="navlinks">desk</a>
+        </div>
+    </div>
+
     <div class="topbar">
         <div class="header animated zoomInRight">
             <img class="logo" src="test.png">
             northwest quad.
         </div>
-        <div class="links animated zoomInLeft">
+        <div id="links" class="animated zoomInLeft">
             <a href="info.html" class="navlinks">info</a>
             <a href="duty.html" class="navlinks">duty</a>
             <a href="desk.html" class="navlinks">desk</a>
         </div>
+        <img class="navbar-toggle" id="js-navbar-toggle" src="toggle.svg">
     </div>
+
+    
 
     <div class="title animated flipInY">
         <div class="introText">─ welcome to ─</div>

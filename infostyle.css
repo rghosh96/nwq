@@ -11,6 +11,54 @@ body {
     justify-content: center;
     
 }
+.navbar-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer; 
+    color: black;
+    height: 15px;
+    visibility: hidden;
+    z-index: 11;
+}
+
+#mobileNav {
+    background-color: darkred;
+    z-index: 10;
+    height: 100vh;
+    width: 50%;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    visibility: hidden;
+}
+
+.mobileNavLinks {
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.darkClass {
+    background-color: black;
+    filter:alpha(opacity=50); /* IE */
+    opacity: 0.5; /* Safari, Opera */
+    -moz-opacity:0.50; /* FireFox */
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
 
 .topbar {
     position: fixed;
@@ -33,7 +81,7 @@ body {
     letter-spacing: 2px;
 }
 
-.links {
+#links {
     display: flex;
     justify-content: space-around;
     width: 15%;
@@ -109,9 +157,6 @@ h1 {
     .logo {
         height:25px;
     }
-    .navlinks {
-        visibility: hidden;
-    }
 
     .container {
         justify-content: center;
@@ -143,6 +188,12 @@ h1 {
         text-align: center;
         font-family: 'Poiret One', cursive;
         font-size: 10px;
+    }
+    #links {
+        visibility: hidden;
+    }
+    .navbar-toggle {
+        visibility: visible;
     }
 }
 
@@ -178,6 +229,13 @@ h1 {
         text-align: center;
         font-family: 'Poiret One', cursive;
         font-size: 13px;
+    }
+
+    #links {
+        visibility: hidden;
+    }
+    .navbar-toggle {
+        visibility: visible;
     }
 }
 
