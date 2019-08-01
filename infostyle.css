@@ -69,7 +69,7 @@ body {
     margin: 15px;
     background: none;
     border: none;
-    z-index: 51;
+    z-index: 2;
 }
 
 .mobileNavLinks {
@@ -105,7 +105,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    z-index: 50;
+    z-index: 1;
 }
 
 .header {
@@ -245,7 +245,7 @@ h3 {
     .container {
         justify-content: center;
         align-items: center;
-        margin-top:100px;
+        margin:100px 0 50px 0;
     }
 
     h1 {
@@ -321,6 +321,7 @@ h3 {
     .container {
         justify-content: center;
         align-items: center;
+        margin:100px 0 50px 0;
     }
 
     h1 {
