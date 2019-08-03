@@ -206,6 +206,25 @@ h3 {
     text-align: center;
 }
 
+.container1 {
+    margin-top: 150px;
+    border: 1px solid gray;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.liveduty {
+    border: none;
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+}
+
 #procedure, #weekend, #break, #deskhours, #sigpad {
     display:none;
     justify-self: center;
@@ -231,6 +250,10 @@ h3 {
 .description {
     font-family: 'Poiret One', cursive;
     width: 100%;
+}
+
+#augDuty, #sepDuty, #octDuty, #novDuty, #decDuty {
+    display: none;
 }
 
 

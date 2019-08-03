@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>nwq info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Poiret+One|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="infostyle.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+</head>
+<body>
+
+    <div class = "container1">
+        <p>Please select a month.</p>
+        <br>
+        <select id="dutySchedule" onchange="dutyCheck(this)">
+            <option id="unselected" value="unselected">select month...</option>
+            <option id="august" value="august">august</option>
+            <option id="september" value="september">september</option>
+            <option id="october" value="october">october</option>
+            <option id="november" value="november">november</option>
+            <option id="december" value="december">december</option>
+        </select>
+        <br>
+    <iframe class="liveduty" id="augDuty" style="width:200px"
+    src="https://docs.google.com/spreadsheets/d/1HlfMV6GmGOvc2jd95wHMX0u2lO9j9mxF17uYKzcZMFQ/htmlembed/sheet?gid=0&range=a4:c34&widget=false&chrome=false"></iframe>
+    <iframe class="liveduty" id="sepDuty" style="width:200px"
+    src="https://docs.google.com/spreadsheets/d/1HlfMV6GmGOvc2jd95wHMX0u2lO9j9mxF17uYKzcZMFQ/htmlembed/sheet?gid=842609619&range=a4:c34&widget=false&chrome=false"></iframe>
+    <iframe class="liveduty" id="octDuty" style="width:200px"
+    src="https://docs.google.com/spreadsheets/d/1HlfMV6GmGOvc2jd95wHMX0u2lO9j9mxF17uYKzcZMFQ/htmlembed/sheet?gid=171119842&range=a4:c34&widget=false&chrome=false"></iframe>
+    <iframe class="liveduty" id="novDuty" style="width:200px"
+    src="https://docs.google.com/spreadsheets/d/1HlfMV6GmGOvc2jd95wHMX0u2lO9j9mxF17uYKzcZMFQ/htmlembed/sheet?gid=1103223813&range=a4:c34&widget=false&chrome=false"></iframe>
+    <iframe class="liveduty" id="decDuty" style="width:200px"
+    src="https://docs.google.com/spreadsheets/d/1HlfMV6GmGOvc2jd95wHMX0u2lO9j9mxF17uYKzcZMFQ/htmlembed/sheet?gid=2073116942&range=a4:c34&widget=false&chrome=false"></iframe>
+
+    <script src="script.js"></script>
+</div>
+</body>

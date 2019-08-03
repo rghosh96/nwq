@@ -192,3 +192,53 @@ function ProcessExcel(data) {
     dvExcel.innerHTML = "";
     dvExcel.appendChild(table);
 };
+
+
+function dutyCheck(month)
+{
+    if(month){
+        whichMonth = month.value;
+        if(whichMonth == "august"){
+            document.getElementById("augDuty").style.display = "block";
+            document.getElementById("sepDuty").style.display = "none";
+            document.getElementById("octDuty").style.display = "none";
+            document.getElementById("novDuty").style.display = "none";
+            document.getElementById("decDuty").style.display = "none";
+        }
+        if(whichMonth == "september"){
+            document.getElementById("sepDuty").style.display = "block";
+            document.getElementById("augDuty").style.display = "none";
+            document.getElementById("octDuty").style.display = "none";
+            document.getElementById("novDuty").style.display = "none";
+            document.getElementById("decDuty").style.display = "none";
+        }
+        if(whichMonth == "october"){
+            document.getElementById("octDuty").style.display = "block";
+            document.getElementById("augDuty").style.display = "none";
+            document.getElementById("sepDuty").style.display = "none";
+            document.getElementById("novDuty").style.display = "none";
+            document.getElementById("decDuty").style.display = "none";
+        }
+        if(whichMonth == "november"){
+            document.getElementById("novDuty").style.display = "block";
+            document.getElementById("augDuty").style.display = "none";
+            document.getElementById("sepDuty").style.display = "none";
+            document.getElementById("octDuty").style.display = "none";
+            document.getElementById("decDuty").style.display = "none";
+        }
+        if(whichMonth == "december"){
+            document.getElementById("decDuty").style.display = "block";
+            document.getElementById("augDuty").style.display = "none";
+            document.getElementById("sepDuty").style.display = "none";
+            document.getElementById("octDuty").style.display = "none";
+            document.getElementById("novDuty").style.display = "none";
+        }
+        if (whichMonth == "unselected") {
+            document.getElementById("augDuty").style.display = "none";
+            document.getElementById("sepDuty").style.display = "none";
+            document.getElementById("octDuty").style.display = "none";
+            document.getElementById("novDuty").style.display = "none";
+            document.getElementById("decDuty").style.display = "none";
+        }
+    }
+}
